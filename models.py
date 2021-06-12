@@ -1,8 +1,14 @@
+import os
+
 from peewee import *
 
 import datetime
 
-DATABASE = SqliteDatabase('sources.sqlite')
+from playhouse.db_url import connect
+DATABASE = connect(os.environ.get('DATABASE_URL') or 'sqlite:///sources.sqlite')
+
+
+#DATABASE = SqliteDatabase('sources.sqlite')
 
 #To connect to Postgres
 #DATABASE = PostgresqlDatabase('sources', user='postgres')
