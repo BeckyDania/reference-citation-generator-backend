@@ -1,4 +1,4 @@
-# monstera-language-academy- MLA/APA citation style generator
+# MLA/APA citation style generator
 Backend for a reference citation style app
 <br> by BeckyDania</br>
 
@@ -20,7 +20,7 @@ The backend code sets up the routes to retrieve, edit, create and delete input f
 * Flask-CORS
 * Peewee
 
-* [Frontend]
+* [Frontend](https://github.com/BeckyDania/reference-citation-generator-frontend)
 
 # Dependencies
 * Flask-CORS
