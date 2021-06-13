@@ -19,7 +19,7 @@ app = Flask(__name__)
 app.secret_key = (os.environ.get("FLASK_APP_SECRET"))
 print(os.environ.get("FLASK_APP_SECRET"))
 
-CORS(sources, origins=['http://localhost:3000'], supports_credentials=True)
+CORS(sources, origins=['http://localhost:3000', 'https://limitless-harbor-79486.herokuapp.com'], supports_credentials=True)
 
 app.register_blueprint(sources, url_prefix='/api/v1/sources')
 
