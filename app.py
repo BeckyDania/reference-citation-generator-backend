@@ -1,5 +1,5 @@
 from flask import Flask, blueprints, jsonify, after_this_request
-from resources.sources import sources
+from resources.sources import sources  
 
 
 import models
